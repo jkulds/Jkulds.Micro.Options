@@ -18,8 +18,4 @@
         <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.32.2" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Content Include=".github\workflows\nuget_publish.yml" />
-    </ItemGroup>
-
 </Project>
