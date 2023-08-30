@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include=".github\workflows\" />
+      <Content Include=".github\workflows\nuget_publish.yml" />
     </ItemGroup>
 
 </Project>
