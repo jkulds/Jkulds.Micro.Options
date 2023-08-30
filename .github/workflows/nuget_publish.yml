@@ -29,7 +29,7 @@ jobs:
         run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.0.0 --no-restore
         
       - name: Pack
-        run: dotnet pack .\Jkulds.Micro.Options.sln --configuration Release -o ./nuget      
+        run: dotnet pack ./$SOLUTION --configuration Release -o ./nuget      
       
       #- name: Run tests
       #  run: dotnet test /p:Configuration=$env:BUILD_CONFIG --no-restore --no-build --verbosity normal
