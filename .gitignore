@@ -33,4 +33,5 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 
-../.idea
+# Rider
+.idea

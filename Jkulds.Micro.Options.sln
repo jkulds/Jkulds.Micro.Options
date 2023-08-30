@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jkulds.Micro.Options", "Jkulds.Micro.Options\Jkulds.Micro.Options.csproj", "{D371D16B-7CAC-434E-9905-D1945A1AA44C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jkulds.Micro.Options", "Jkulds.Micro.Options.csproj", "{D371D16B-7CAC-434E-9905-D1945A1AA44C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
