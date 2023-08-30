@@ -18,14 +18,14 @@ jobs:
         id: publish_nuget
         uses: brandedoutcast/publish-nuget@v2.5.5
         with:
-          PROJECT_FILE_PATH: Jkulds.Micro.Options/Jkulds.Micro.Options.csproj
+          PROJECT_FILE_PATH: Jkulds.Micro.Options.csproj
           BUILD_CONFIGURATION: Release
 
           # Platform target to compile (default is empty/AnyCPU)
           # BUILD_PLATFORM: x64
 
           # NuGet package id, used for version detection & defaults to project name
-          PACKAGE_NAME: Jkulds.Micro.Options
+          # PACKAGE_NAME: Jkulds.Micro.Options
 
           # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
           # VERSION_FILE_PATH: Directory.Build.props
