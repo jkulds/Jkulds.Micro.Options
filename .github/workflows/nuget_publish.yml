@@ -24,16 +24,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0
-
-      - name: Increment version
-        uses: reecetech/version-increment@2023.4.1
-        id: version
-        with:
-          scheme: semver
-          increment: major
       
       - name: Build
-        run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=${{steps.version.outputs.version}} --no-restore
+        run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.0.2 --no-restore
         
 #      - name: Pack
 #        run: dotnet pack ./$SOLUTION --configuration Release -o ./nuget      
