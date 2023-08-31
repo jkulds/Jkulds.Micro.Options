@@ -28,11 +28,11 @@ jobs:
       - name: Build
         run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=1.0.1 --no-restore
         
-      - name: Pack
-        run: dotnet pack ./$SOLUTION --configuration Release -o ./nuget      
+#      - name: Pack
+#        run: dotnet pack ./$SOLUTION --configuration Release -o ./nuget      
       
-      #- name: Run tests
-      #  run: dotnet test /p:Configuration=$env:BUILD_CONFIG --no-restore --no-build --verbosity normal
+#      - name: Run tests
+#        run: dotnet test /p:Configuration=$env:BUILD_CONFIG --no-restore --no-build --verbosity normal
 
       - name: Publish
-        run: dotnet nuget push ./nuget/*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push ./bin/Release/*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
