@@ -30,10 +30,7 @@ jobs:
         id: version
         with:
           scheme: semver
-          increment: patch
-          
-      - name: Echo version
-        run: echo ${{steps.version.outputs.version}}
+          increment: major
       
       - name: Build
         run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=${{steps.version.outputs.version}} --no-restore
